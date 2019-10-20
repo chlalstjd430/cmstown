@@ -1,0 +1,48 @@
+.board{
+    width: 80%;
+    margin: 0 auto;
+}
+.board .board-table{
+    margin: 10px 0px;
+    width: 100%;
+}
+.board .board-table td{
+    padding: 20px;
+}
+
+.board .board-table .board-title{
+    text-align: center;
+}
+.board .board-table .board-writer{
+    width: 60%;
+}
+.board .board-table .board-date{
+    width:25%;
+}
+.board .board-table .board-hit{
+    text-align: right;
+    width: 15%;
+}
+.board .board-table .board-content{
+    padding: 80px 20px;
+
+}
+.board-top{
+    border-bottom: 1px solid #ececec;
+}
+.board-middle{
+    border-bottom: 1px solid black;
+}
+.empty{
+    text-align: center;
+    margin: 30px 0px;
+}
+.reply-table{
+    width: 100%;
+}
+.reply-table td{
+    padding:10px 0px;
+}
+.reply-table .reply-date, .reply-table .reply-profile{
+    border-bottom: 1px solid #ececec;
+}

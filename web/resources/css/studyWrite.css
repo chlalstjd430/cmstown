@@ -1,0 +1,7 @@
+.board{
+    width: 80%;
+    margin: 0 auto;
+}
+.board-form input {
+    text-align: center;
+}

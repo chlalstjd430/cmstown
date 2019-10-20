@@ -1,0 +1,29 @@
+.board{
+    width: 80%;
+    margin: 0 auto;
+}
+.board table{
+    width: 100%;
+    background:white;
+
+}
+.board table td{
+    padding: 20px;
+    border-bottom: 1px solid gray;
+}
+.board table .board-title{
+    width: 80%;
+}
+.board table .board-date{
+    width: 20%;
+}
+.page-number{
+    background: white;
+    text-align: center;
+}
+table .board-title{
+    cursor: pointer;
+}
+table .board-title:hover{
+    background: #ececec;
+}
