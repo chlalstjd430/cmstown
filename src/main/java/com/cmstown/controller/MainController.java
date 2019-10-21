@@ -6,10 +6,17 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
 public class MainController {
-    @RequestMapping(value = {"/main","/"}, method = RequestMethod.GET)
+
+
+    @RequestMapping(value = "/")
+    public String root(){
+        return "main";
+    }
+    @RequestMapping(value = "/main")
     public String main(){
         return "main";
     }
+
 
     @RequestMapping(value = "/projects")
     public String projects(){
