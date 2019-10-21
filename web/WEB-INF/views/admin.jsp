@@ -16,7 +16,7 @@
     <link href="/resources/vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
     <!-- Theme CSS - Includes Bootstrap -->
     <link href="/resources/startbootstrap/css/creative.min.css" rel="stylesheet">
-    <script src="/resources/js/study.adminStudy.js"></script>
+    <script src="/resources/js/adminStudy.js"></script>
   </head>
   <body>
 
