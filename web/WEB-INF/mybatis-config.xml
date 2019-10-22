@@ -8,9 +8,9 @@
 
     <bean id="dataSource_mysql" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
         <property name="driverClassName" value="com.mysql.jdbc.Driver"></property>
-        <property name="url" value="jdbc:mysql://chlalstjd430.cafe24.com/chlalstjd430?useSSL=false&amp;serverTimezone=UTC&amp;useUnicode=true&amp;characterEncoding=utf8"></property>
-        <property name="username" value="chlalstjd430"></property>
-        <property name="password" value="Choi1048!@"></property>
+        <property name="url" value="jdbc:mysql://localhost:3306/cmstown_db?useSSL=false&amp;serverTimezone=UTC&amp;useUnicode=true&amp;characterEncoding=utf8"></property>
+        <property name="username" value="root"></property>
+        <property name="password" value="1234"></property>
     </bean>
     <bean id="sqlSessionFactory_mysql" class="org.mybatis.spring.SqlSessionFactoryBean">
         <property name="dataSource" ref="dataSource_mysql"/>

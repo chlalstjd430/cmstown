@@ -31,13 +31,7 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto my-2 my-lg-0">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="/main#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="/main#skills">Skills</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="/projects">Projects</a>
+            <a class="nav-link js-scroll-trigger" href="/about">About</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="/study">Study</a>
@@ -52,41 +46,33 @@
 
 
   <!-- Project Section -->
-  <section class="page-section bg-dark" id="projects">
+  <!-- About Section -->
+  <section class="page-section bg-dark " id="about">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-8 text-center">
-          <h1 class="text-white mt-0">Projects<br><br></h1>
-          <h2 class="text-white mt-0">CollorGalliCups</h2>
-          <hr class="divider light my-4">
-          <p class="text-white-50 mb-4">보드게임 할리갈리 컵스를 모티브로, JAVA swing으로 구현한  local Stand Alone 게임입니다.</p>
-          <div class="row">
-            <div class="col-lg-12 col-md-12 text-center">
-              <div style="position: relative; max-width: 100%; padding-bottom: 56.25%; height: 0;">
-                <iframe width="320" height="180" src="https://www.youtube.com/embed/F6uuq8EpN8c" frameborder="0" allowfullscreen="" style="position: absolute; position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
-              </div>
-            </div>
-          </div>
-          <a class="btn btn-light btn-xl js-scroll-trigger" href="#" style="margin-top: 20px">PPT 문서 받기</a>
+          <h2 class="text-white mt-0">About Me</h2>
+          <hr class="divide light my-4">
+          <p class="text-white-50 mb-4">- 1995년 4월 30일</p>
+          <p class="text-white-50 mb-4">- 숭실대학교 글로벌미디어학부</p>
+          <p class="text-white-50 mb-4">- 렉토피아 JAVA 전문가 과정 17기</p>
+          <p class="text-white-50 mb-4">- 유어슈 백엔드 개발자</p>
         </div>
       </div>
     </div>
   </section>
+
+
   <section class="page-section bg-light" id="projects2">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-8 text-center">
-          <h2 class="text-dark mt-0">MOA</h2>
-          <hr class="divider dark my-4">
-          <p class="text-dark-50 mb-4">물품 보관 개인 중개 서비스로 Spring FrameWork로 구현한 첫번째 웹 프로젝트입니다.</p>
-          <div class="row">
-            <div class="col-lg-12 col-md-12 text-center">
-              <div style="position: relative; max-width: 100%; padding-bottom: 56.25%; height: 0;">
-                <iframe width="320" height="180" src="https://www.youtube.com/embed/oyWl1kAiSKQ" frameborder="0" allowfullscreen="" style="position: absolute; position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
-              </div>
-            </div>
-          </div>
-          <a class="btn btn-dark btn-xl js-scroll-trigger" href="#" style="margin-top: 20px">PPT 문서 받기</a>
+          <h2 class="text-dark mt-0">Projects</h2>
+          <hr class="divide bg-dark my-4">
+
+          <p class="text-dark-50 mb-4"><a href="https://www.youtube.com/watch?v=oyWl1kAiSKQ">- 물품 보관 중개 서비스 MOA</a></p>
+          <p class="text-dark-50 mb-4"><a href="https://www.youtube.com/watch?v=F6uuq8EpN8c">- stand alone game Color Galli Cups</a></p>
+
         </div>
       </div>
     </div>

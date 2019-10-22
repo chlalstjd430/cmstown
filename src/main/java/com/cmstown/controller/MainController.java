@@ -18,8 +18,8 @@ public class MainController {
     }
 
 
-    @RequestMapping(value = "/projects")
+    @RequestMapping(value = "/about")
     public String projects(){
-        return "projects";
+        return "about";
     }
 }
