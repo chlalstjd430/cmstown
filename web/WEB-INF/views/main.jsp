@@ -28,13 +28,7 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto my-2 my-lg-0">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="/main#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="/main#skills">Skills</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="/projects">Projects</a>
+            <a class="nav-link js-scroll-trigger" href="/bout">About</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="/study">Study</a>
@@ -52,11 +46,11 @@
     <div class="container h-100">
       <div class="row h-100 align-items-center justify-content-center text-center">
         <div class="col-lg-10 align-self-end">
-          <h1 class="text-uppercase text-white font-weight-bold">개발자 민성이의 홈페이지</h1>
+          <h1 class="text-uppercase text-white font-weight-bold">www.cmstown.shop</h1>
           <hr class="divider my-4">
         </div>
         <div class="col-lg-8 align-self-baseline">
-          <p class="text-white-75 font-weight-light mb-5">코딩을 좋아하는 평범한 대학생의 홈페이지입니다:D</p>
+          <p class="text-white-75 font-weight-light mb-5">평범한 대학생의 개발 공부 :D</p>
           <a class="btn btn-light btn-xl js-scroll-trigger" href="#about">About Me</a>
         </div>
         <div class="bottom-img text-center col-lg-12">
@@ -67,182 +61,181 @@
   </header>
 
   <!-- About Section -->
-  <section class="page-section bg-dark" id="about">
+  <section class="page-section " id="about">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-8 text-center">
-          <h2 class="text-white mt-0">About Me</h2>
-          <hr class="divider light my-4">
-          <p class="text-white-50 mb-4">간단한 자기소개 내용넣기</p>
-          <p class="text-white-50 mb-4">- 1995년 4월 30일</p>
-          <p class="text-white-50 mb-4">- 전주한일고등학교 졸업</p>
-          <p class="text-white-50 mb-4">- 숭실대학교 글로벌미디어학부</p>
-          <p class="text-white-50 mb-4">- 렉토피아 JAVA 전문가 과정 17기 수료</p>
-          <a class="btn btn-light btn-xl js-scroll-trigger" href="/projects">Projects</a>
+          <h2 class="text-dark mt-0">About Me</h2>
+          <hr class="divide bg-dark my-4">
+          <p class="text-dark-50 mb-4">- 1995년 4월 30일</p>
+          <p class="text-dark-50 mb-4">- 숭실대학교 글로벌미디어학부</p>
+          <p class="text-dark-50 mb-4">- 렉토피아 JAVA 전문가 과정 17기</p>
+          <p class="text-dark-50 mb-4">- 유어슈 백엔드 개발자</p>
+          <a class="btn btn-dark btn-xl js-scroll-trigger" href="/projects">more+</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Services Section -->
-  <section class="page-section" id="skills">
-    <div class="container">
-      <h1 class="text-center mt-0">Skills</h1>
-      <hr class="divider my-4">
-      <h3 class="text-center mt-0">Programming Language</h3>
-      <div class="row">
-        <div class="col-lg-4 col-md-6 text-center">
-          <div class="mt-5">
-            <img src="/resources/img/c.png">
-            <h3 class="h4 mb-2">C</h3>
-<%--            <p class="text-muted mb-0">상급</p>--%>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 text-center">
-          <div class="mt-5">
-            <img src="/resources/img/c++.png">
-            <h3 class="h4 mb-2">C++</h3>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 text-center">
-          <div class="mt-5">
-            <img src="/resources/img/java.png">
-            <h3 class="h4 mb-2">JAVA</h3>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 text-center">
-          <div class="mt-5">
-            <img src="/resources/img/html.png">
-            <h3 class="h4 mb-2">HTML</h3>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 text-center">
-          <div class="mt-5">
-            <img src="/resources/img/css.png">
-            <h3 class="h4 mb-2">CSS</h3>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 text-center">
-          <div class="mt-5">
-            <img src="/resources/img/js.png">
-            <h3 class="h4 mb-2">JAVA SCRIPT</h3>
-          </div>
-        </div>
-      </div>
+<%--  <!-- Services Section -->--%>
+<%--  <section class="page-section" id="skills">--%>
+<%--    <div class="container">--%>
+<%--      <h1 class="text-center mt-0">Skills</h1>--%>
+<%--      <hr class="divider my-4">--%>
+<%--      <h3 class="text-center mt-0">Programming Language</h3>--%>
+<%--      <div class="row">--%>
+<%--        <div class="col-lg-4 col-md-6 text-center">--%>
+<%--          <div class="mt-5">--%>
+<%--            <img src="/resources/img/c.png">--%>
+<%--            <h3 class="h4 mb-2">C</h3>--%>
+<%--&lt;%&ndash;            <p class="text-muted mb-0">상급</p>&ndash;%&gt;--%>
+<%--          </div>--%>
+<%--        </div>--%>
+<%--        <div class="col-lg-4 col-md-6 text-center">--%>
+<%--          <div class="mt-5">--%>
+<%--            <img src="/resources/img/c++.png">--%>
+<%--            <h3 class="h4 mb-2">C++</h3>--%>
+<%--          </div>--%>
+<%--        </div>--%>
+<%--        <div class="col-lg-4 col-md-6 text-center">--%>
+<%--          <div class="mt-5">--%>
+<%--            <img src="/resources/img/java.png">--%>
+<%--            <h3 class="h4 mb-2">JAVA</h3>--%>
+<%--          </div>--%>
+<%--        </div>--%>
+<%--        <div class="col-lg-4 col-md-6 text-center">--%>
+<%--          <div class="mt-5">--%>
+<%--            <img src="/resources/img/html.png">--%>
+<%--            <h3 class="h4 mb-2">HTML</h3>--%>
+<%--          </div>--%>
+<%--        </div>--%>
+<%--        <div class="col-lg-4 col-md-6 text-center">--%>
+<%--          <div class="mt-5">--%>
+<%--            <img src="/resources/img/css.png">--%>
+<%--            <h3 class="h4 mb-2">CSS</h3>--%>
+<%--          </div>--%>
+<%--        </div>--%>
+<%--        <div class="col-lg-4 col-md-6 text-center">--%>
+<%--          <div class="mt-5">--%>
+<%--            <img src="/resources/img/js.png">--%>
+<%--            <h3 class="h4 mb-2">JAVA SCRIPT</h3>--%>
+<%--          </div>--%>
+<%--        </div>--%>
+<%--      </div>--%>
 
 
-      <hr class="divider my-4">
-      <h3 class="text-center mt-0">FrameWork</h3>
-      <div class="row">
-        <div class="col-lg-6 col-md-6 text-center">
-          <div class="mt-5">
-            <img src="/resources/img/spring.png">
-            <h3 class="h4 mb-2">Spring</h3>
-          </div>
-        </div>
-        <div class="col-lg-6 col-md-6 text-center">
-          <div class="mt-5">
-            <img src="/resources/img/mybatis.png">
-            <h3 class="h4 mb-2">Mybatis</h3>
-          </div>
-        </div>
-      </div>
+<%--      <hr class="divider my-4">--%>
+<%--      <h3 class="text-center mt-0">FrameWork</h3>--%>
+<%--      <div class="row">--%>
+<%--        <div class="col-lg-6 col-md-6 text-center">--%>
+<%--          <div class="mt-5">--%>
+<%--            <img src="/resources/img/spring.png">--%>
+<%--            <h3 class="h4 mb-2">Spring</h3>--%>
+<%--          </div>--%>
+<%--        </div>--%>
+<%--        <div class="col-lg-6 col-md-6 text-center">--%>
+<%--          <div class="mt-5">--%>
+<%--            <img src="/resources/img/mybatis.png">--%>
+<%--            <h3 class="h4 mb-2">Mybatis</h3>--%>
+<%--          </div>--%>
+<%--        </div>--%>
+<%--      </div>--%>
 
-      <hr class="divider my-4">
-      <h3 class="text-center mt-0">DataBase</h3>
-      <div class="row">
-        <div class="col-lg-6 col-md-6 text-center">
-          <div class="mt-5">
-            <img src="/resources/img/mysql.png">
-            <h3 class="h4 mb-2">MySQL</h3>
-          </div>
-        </div>
-        <div class="col-lg-6 col-md-6 text-center">
-          <div class="mt-5">
-            <img src="/resources/img/oracle.png">
-            <h3 class="h4 mb-2">ORACLE</h3>
-          </div>
-        </div>
-      </div>
+<%--      <hr class="divider my-4">--%>
+<%--      <h3 class="text-center mt-0">DataBase</h3>--%>
+<%--      <div class="row">--%>
+<%--        <div class="col-lg-6 col-md-6 text-center">--%>
+<%--          <div class="mt-5">--%>
+<%--            <img src="/resources/img/mysql.png">--%>
+<%--            <h3 class="h4 mb-2">MySQL</h3>--%>
+<%--          </div>--%>
+<%--        </div>--%>
+<%--        <div class="col-lg-6 col-md-6 text-center">--%>
+<%--          <div class="mt-5">--%>
+<%--            <img src="/resources/img/oracle.png">--%>
+<%--            <h3 class="h4 mb-2">ORACLE</h3>--%>
+<%--          </div>--%>
+<%--        </div>--%>
+<%--      </div>--%>
 
-      <hr class="divider my-4">
-      <h3 class="text-center mt-0">IDE</h3>
-      <div class="row">
-        <div class="col-lg-4 col-md-6 text-center">
-          <div class="mt-5">
-            <img src="/resources/img/intellij.png">
-            <h3 class="h4 mb-2">IntelliJ</h3>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 text-center">
-          <div class="mt-5">
-            <img src="/resources/img/eclipse.png">
-            <h3 class="h4 mb-2">Eclipse</h3>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 text-center">
-          <div class="mt-5">
-            <img src="/resources/img/android.png">
-            <h3 class="h4 mb-2">Android Studio </h3>
-          </div>
-        </div>
-        <div class="col-lg-6 col-md-6 text-center">
-          <div class="mt-5">
-            <img src="/resources/img/sql%20developer.png">
-            <h3 class="h4 mb-2">SQL Developer</h3>
-          </div>
-        </div>
-        <div class="col-lg-6 col-md-6 text-center">
-          <div class="mt-5">
-            <img src="/resources/img/workbench.png">
-            <h3 class="h4 mb-2">Workbench</h3>
-          </div>
-        </div>
-      </div>
+<%--      <hr class="divider my-4">--%>
+<%--      <h3 class="text-center mt-0">IDE</h3>--%>
+<%--      <div class="row">--%>
+<%--        <div class="col-lg-4 col-md-6 text-center">--%>
+<%--          <div class="mt-5">--%>
+<%--            <img src="/resources/img/intellij.png">--%>
+<%--            <h3 class="h4 mb-2">IntelliJ</h3>--%>
+<%--          </div>--%>
+<%--        </div>--%>
+<%--        <div class="col-lg-4 col-md-6 text-center">--%>
+<%--          <div class="mt-5">--%>
+<%--            <img src="/resources/img/eclipse.png">--%>
+<%--            <h3 class="h4 mb-2">Eclipse</h3>--%>
+<%--          </div>--%>
+<%--        </div>--%>
+<%--        <div class="col-lg-4 col-md-6 text-center">--%>
+<%--          <div class="mt-5">--%>
+<%--            <img src="/resources/img/android.png">--%>
+<%--            <h3 class="h4 mb-2">Android Studio </h3>--%>
+<%--          </div>--%>
+<%--        </div>--%>
+<%--        <div class="col-lg-6 col-md-6 text-center">--%>
+<%--          <div class="mt-5">--%>
+<%--            <img src="/resources/img/sql%20developer.png">--%>
+<%--            <h3 class="h4 mb-2">SQL Developer</h3>--%>
+<%--          </div>--%>
+<%--        </div>--%>
+<%--        <div class="col-lg-6 col-md-6 text-center">--%>
+<%--          <div class="mt-5">--%>
+<%--            <img src="/resources/img/workbench.png">--%>
+<%--            <h3 class="h4 mb-2">Workbench</h3>--%>
+<%--          </div>--%>
+<%--        </div>--%>
+<%--      </div>--%>
 
-      <hr class="divider my-4">
-      <h3 class="text-center mt-0">ETC</h3>
-      <div class="row">
-        <div class="col-lg-4 col-md-6 text-center">
-          <div class="mt-5">
-            <img src="/resources/img/staruml.png">
-            <h3 class="h4 mb-2">starUML</h3>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 text-center">
-          <div class="mt-5">
-            <img src="/resources/img/visualparadigm.png">
-            <h3 class="h4 mb-2">Visual Paradigm</h3>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 text-center">
-          <div class="mt-5">
-            <img src="/resources/img/atom.png">
-            <h3 class="h4 mb-2">Atom</h3>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 text-center">
-          <div class="mt-5">
-            <img src="/resources/img/github.png">
-            <h3 class="h4 mb-2">Github</h3>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 text-center">
-          <div class="mt-5">
-            <img src="/resources/img/git.png">
-            <h3 class="h4 mb-2">Git</h3>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 text-center">
-          <div class="mt-5">
-            <img src="/resources/img/tortoise.png">
-            <h3 class="h4 mb-2">TortoiseSVN</h3>
-          </div>
-        </div>
-      </div>
+<%--      <hr class="divider my-4">--%>
+<%--      <h3 class="text-center mt-0">ETC</h3>--%>
+<%--      <div class="row">--%>
+<%--        <div class="col-lg-4 col-md-6 text-center">--%>
+<%--          <div class="mt-5">--%>
+<%--            <img src="/resources/img/staruml.png">--%>
+<%--            <h3 class="h4 mb-2">starUML</h3>--%>
+<%--          </div>--%>
+<%--        </div>--%>
+<%--        <div class="col-lg-4 col-md-6 text-center">--%>
+<%--          <div class="mt-5">--%>
+<%--            <img src="/resources/img/visualparadigm.png">--%>
+<%--            <h3 class="h4 mb-2">Visual Paradigm</h3>--%>
+<%--          </div>--%>
+<%--        </div>--%>
+<%--        <div class="col-lg-4 col-md-6 text-center">--%>
+<%--          <div class="mt-5">--%>
+<%--            <img src="/resources/img/atom.png">--%>
+<%--            <h3 class="h4 mb-2">Atom</h3>--%>
+<%--          </div>--%>
+<%--        </div>--%>
+<%--        <div class="col-lg-4 col-md-6 text-center">--%>
+<%--          <div class="mt-5">--%>
+<%--            <img src="/resources/img/github.png">--%>
+<%--            <h3 class="h4 mb-2">Github</h3>--%>
+<%--          </div>--%>
+<%--        </div>--%>
+<%--        <div class="col-lg-4 col-md-6 text-center">--%>
+<%--          <div class="mt-5">--%>
+<%--            <img src="/resources/img/git.png">--%>
+<%--            <h3 class="h4 mb-2">Git</h3>--%>
+<%--          </div>--%>
+<%--        </div>--%>
+<%--        <div class="col-lg-4 col-md-6 text-center">--%>
+<%--          <div class="mt-5">--%>
+<%--            <img src="/resources/img/tortoise.png">--%>
+<%--            <h3 class="h4 mb-2">TortoiseSVN</h3>--%>
+<%--          </div>--%>
+<%--        </div>--%>
+<%--      </div>--%>
 
-    </div>
-  </section>
+<%--    </div>--%>
+<%--  </section>--%>
 
   <!-- Contact Section -->
   <section class="page-section bg-dark" id="contact">
