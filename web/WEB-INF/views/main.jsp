@@ -90,6 +90,7 @@
       <div class="col-lg-4 ml-auto text-center mb-5 mb-lg-0">
         <i class="fas text-white fa-phone-square "style="font-size: 100px;"></i>
         <div class="text-white ">010-8757-1048</div>
+
       </div>
       <div class="col-lg-4 mr-auto text-center">
         <i class="fas text-white fa-envelope-square" style="font-size: 100px;"></i>

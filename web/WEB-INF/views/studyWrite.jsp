@@ -17,7 +17,7 @@
     <!-- Theme CSS - Includes Bootstrap -->
     <link href="/resources/startbootstrap/css/creative.min.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-latest.js"></script>
-    <script type="text/javascript" src="/smarteditor/js/HuskyEZCreator.js" charset="utf-8"></script>
+
   </head>
   <body>
 
@@ -94,6 +94,7 @@
   <script src="/resources/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
 
   <!-- Custom scripts for this template -->
+  <script type="text/javascript" src="/smarteditor/js/HuskyEZCreator.js" charset="utf-8"></script>
   <script src="/resources/startbootstrap/js/creative.min.js"></script>
   <script src="/resources/js/studyWrite.js"></script>
   </body>
