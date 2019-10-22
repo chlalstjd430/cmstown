@@ -14,7 +14,7 @@ public class ErrorController {
 
     @RequestMapping(value = "/projects")
     public String projects(){
-        return "projects";
+        return "about";
     }
 
 
