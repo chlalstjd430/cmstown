@@ -22,6 +22,7 @@ import com.cmstown.model.vo.BoardVO;
 import com.cmstown.model.vo.CategoryVO;
 import com.cmstown.model.vo.ReplyVO;
 import com.cmstown.paging.Pagination;
+import com.nhncorp.lucy.security.xss.XssPreventer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -76,6 +77,7 @@ public class StudyController {
         ModelAndView mav = new ModelAndView();
         mav.setViewName("studyInfo");
 
+        category = XssPreventer.escape(category);
         //Cookie for calculate hit count
         Cookie[] cookies = request.getCookies();
         Cookie viewCookie = null;
@@ -130,8 +132,8 @@ public class StudyController {
     @RequestMapping(value = "/postArticle.do", method = RequestMethod.POST)
     public String insertBoard(String title, String editor, Long category) {
         Map<String,Object> articleInfo = new HashMap<String, Object>();
-        articleInfo.put("title", title);
-        articleInfo.put("content",editor);
+        articleInfo.put("title", XssPreventer.escape(title));
+        articleInfo.put("content",XssPreventer.escape(editor));
         articleInfo.put("category",category);
 
         boolean result = studyBoardPostService.postArticle(articleInfo);
@@ -151,6 +153,8 @@ public class StudyController {
             String oldName = request.getHeader("file-name");
             // 파일 기본경로 _ 상세경로
             String filePath = "C:/Users/chlal/IdeaProjects/comstown/web/smarteditor/photoUpload/";
+//            배포 경로
+//            String filePath = "/chlalstjd430/cmstown/photo/";
             String saveName = sb.append(new SimpleDateFormat("yyyyMMddHHmmss")
                     .format(System.currentTimeMillis()))
                     .append(UUID.randomUUID().toString())
