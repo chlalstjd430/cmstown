@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.cmstown.mybatis.StudyReplyMapper">
+
+    <!--  댓글 목록  -->
+    <select id="selectReplyList" parameterType="Integer" resultType="com.cmstown.model.vo.ReplyVO">
+       select reply_id as replyID, board_Id as boardID,content,writer,password,date
+        from reply_tb
+        where board_id = #{boardID}
+    </select>
+
+    <!-- 댓글 추가   -->
+    <insert id="insertReply" parameterType="hashMap">
+        INSERT into reply_tb(board_id,content,writer,password) values(#{boardID},#{content},#{writer},#{password});
+    </insert>
+
+    <update id="updateReply" parameterType="hashMap">
+        UPDATE reply_tb SET content = #{content} WHERE (reply_id = #{replyID});
+    </update>
+
+    <delete id="deleteBoardReply" parameterType="Integer">
+        DELETE FROM reply_tb WHERE (board_id = #{boardID});
+    </delete>
+    <delete id="deleteReply" parameterType="Integer">
+        DELETE FROM reply_tb WHERE (reply_id = #{replyID});
+    </delete>
+
+
+</mapper>

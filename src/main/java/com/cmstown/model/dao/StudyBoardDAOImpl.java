@@ -53,4 +53,5 @@ public class StudyBoardDAOImpl implements StudyBoardDAO {
         StudyBoardMapper mapper = sqlSession.getMapper(StudyBoardMapper.class);
         return mapper.deleteStudyBoard(no);
     }
+
 }

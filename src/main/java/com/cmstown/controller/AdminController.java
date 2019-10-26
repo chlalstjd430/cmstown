@@ -1,14 +1,13 @@
 package com.cmstown.controller;
 
-import com.cmstown.model.service.StudyBoardCategoryService;
-import com.cmstown.model.service.StudyBoardDeleteService;
-import com.cmstown.model.service.StudyBoardPostService;
-import com.cmstown.model.service.StudyBoardShowService;
+import com.cmstown.model.service.board.StudyBoardCategoryService;
+import com.cmstown.model.service.board.StudyBoardDeleteService;
+import com.cmstown.model.service.board.StudyBoardPostService;
+import com.cmstown.model.service.board.StudyBoardShowService;
 import com.cmstown.model.vo.BoardVO;
 import com.cmstown.model.vo.CategoryVO;
 import com.cmstown.paging.Pagination;
 import com.cmstown.security.SHA256;
-import com.mysql.cj.Session;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestBody;

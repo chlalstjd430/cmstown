@@ -7,6 +7,7 @@
   <meta name="author" content="">
   <title>cmsTown</title>
   <link href="/resources/css/studyInfo.css" rel="stylesheet">
+  <link href="/resources/css/checkPWPopup.css" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" />    <link href="/resources/css/main.css" rel="stylesheet" type="text/css">
   <!-- Google Fonts -->
@@ -17,6 +18,7 @@
   <!-- Theme CSS - Includes Bootstrap -->
   <link href="/resources/startbootstrap/css/creative.min.css" rel="stylesheet">
   <script src="/resources/js/adminStudy.js"></script>
+
 </head>
 <body>
 
@@ -29,9 +31,6 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav ml-auto my-2 my-lg-0">
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="/main">HOME</a>
-        </li>
         <li class="nav-item">
           <c:set var = "allCount" value = "0" />
           <c:forEach var="category" begin="0" end="${categoryList.size()}" step="1" items="${categoryList}">
@@ -96,30 +95,96 @@
       <td class="board-content"  colspan="3">${info.content}</td>
     </tr>
   </table>
-  <h3>댓글(0)</h3>
-  <form class="reply-form">
-    <input type="email" placeholder="이메일">
-    <input type="password" placeholder="비밀번호(수정/삭제 시 사용)">
-    <input type="submit" value="등록">
-    <textarea placeholder="댓글을 입력해주세요." style="width: 100%;"></textarea>
-  </form>
+  <h3>댓글(${reply.size()})</h3>
+
+  <div class="reply-form" >
+    <input type="hidden" id="boardID" value="${info.id}">
+    <input type="email" id="email" placeholder="이메일">
+    <input type="password" id="password" placeholder="숫자 4자리">
+    <input type="submit" id="send-reply" value="등록">
+    <textarea placeholder="댓글을 입력해주세요." id="content" style="width: 100%;"></textarea>
+  </div>
+
   <table class="reply-table">
-    <tr>
-      <td class="reply-profile" rowspan="3">이미지</td>
-      <td class="reply-nick">익명</td>
-      <td class="reply-remarks" rowspan="3"><a href="">삭제</a></td>
-    </tr>
-    <tr>
-      <td class="reply-content">글 내용</td>
-    </tr>
-    <tr>
-      <td class="reply-date">2019-09-14 18:52:31</td>
-    </tr>
+    <c:choose>
+      <c:when test="${reply == null}">
+        <tr>
+          <td>등록된 댓글이 존재하지 않습니다.</td>
+        </tr>
+      </c:when>
+      <c:otherwise>
+        <c:forEach var="re" begin="0" end="${reply.size()}" step="1" items="${reply}">
+          <tr>
+            <td class="reply-profile" rowspan="3">${re.writer}</td>
+            <td class="reply-nick"></td>
+            <td class="reply-remarks" rowspan="3">
+              <a href="javascript:void(0);"  onclick="update_popup(${re.replyID})">수정</a> |
+              <a href="javascript:void(0);" onclick="delete_popup(${re.replyID})" >삭제</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="reply-content">${re.content}</td>
+          </tr>
+          <tr>
+            <td class="reply-date">${re.date}</td>
+          </tr>
+        </c:forEach>
+      </c:otherwise>
+    </c:choose>
+
+
 
   </table>
 </section>
   </c:otherwise>
 </c:choose>
+
+<%-- 팝업 창 --%>
+<div class="delete-layer">
+  <div class="dimBg"></div>
+  <div id="delete-check" class="pop-layer">
+    <div class="pop-container">
+      <div class="pop-conts">
+        <!--content -->
+        <p class="ctxt mb20">
+          댓글 삭제를 원하시면 댓글 입력시 입력한 비밀번호를 적어주세요.
+        </p>
+
+        <div class="btn-r">
+          <br>
+          <input style="width: 100%" id="pop-password" type="password" placeholder="비밀번호">
+          <br><br>
+          <a href="javascript:void(0);" class="btn-layerCheck">확인</a>
+          <a href="javascript:void(0);" class="btn-layerClose">취소</a>
+        </div>
+        <!--// content-->
+      </div>
+    </div>
+  </div>
+</div>
+<div class="update-layer">
+  <div class="dimBg"></div>
+  <div id="update-check" class="pop-layer">
+    <div class="pop-container">
+      <div class="pop-conts">
+        <!--content //-->
+        <p class="ctxt mb20">
+          댓글 삭제를 원하시면 댓글 입력시 입력한 비밀번호를 적어주세요.
+        </p>
+
+        <div class="btn-r">
+          <br>
+          <textarea style="width: 100%; height: 80px;" id="pop-content" placeholder="수정할 내용을 입력해주세요."></textarea>
+          <input style="width: 100%" id="pop-password2" type="password" placeholder="비밀번호">
+          <br><br>
+          <a href="javascript:void(0);" class="btn-UpdateCheck">확인</a>
+          <a href="javascript:void(0);" class="btn-UpdateClose">취소</a>
+        </div>
+        <!--// content-->
+      </div>
+    </div>
+  </div>
+</div>
 
 
 <!-- Footer -->
@@ -140,6 +205,6 @@
 
 <!-- Custom scripts for this template -->
 <script src="/resources/startbootstrap/js/creative.min.js"></script>
-
+<script src="/resources/js/reply.js"></script>
 </body>
 </html>

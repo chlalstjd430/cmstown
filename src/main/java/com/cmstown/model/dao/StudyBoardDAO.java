@@ -2,6 +2,7 @@ package com.cmstown.model.dao;
 
 import com.cmstown.model.vo.BoardVO;
 import com.cmstown.model.vo.CategoryVO;
+import com.cmstown.model.vo.ReplyVO;
 
 import java.util.List;
 import java.util.Map;

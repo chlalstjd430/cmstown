@@ -30,9 +30,6 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto my-2 my-lg-0">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="/main">HOME</a>
-          </li>
-          <li class="nav-item">
             <c:set var = "allCount" value = "0" />
             <c:forEach var="category" begin="0" end="${categoryList.size()}" step="1" items="${categoryList}">
               <c:set var= "allCount" value="${allCount + category.count}"/>

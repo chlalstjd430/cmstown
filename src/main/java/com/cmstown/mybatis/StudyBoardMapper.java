@@ -2,6 +2,7 @@ package com.cmstown.mybatis;
 
 import com.cmstown.model.vo.BoardVO;
 import com.cmstown.model.vo.CategoryVO;
+import com.cmstown.model.vo.ReplyVO;
 
 import java.util.List;
 import java.util.Map;
@@ -17,4 +18,5 @@ public interface StudyBoardMapper {
     int updateBoard(Map<String,Object> updateInfo);
     int updateHit(Integer no);
     int deleteStudyBoard(Integer no);
+    List<ReplyVO> selectReplyList(Integer boardID);
 }

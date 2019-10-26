@@ -1,4 +1,4 @@
-package com.cmstown.model.service;
+package com.cmstown.model.service.board;
 
 import com.cmstown.model.dao.StudyBoardDAO;
 import com.cmstown.model.vo.CategoryVO;
@@ -7,7 +7,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Map;
 
 @Service
 @NoArgsConstructor

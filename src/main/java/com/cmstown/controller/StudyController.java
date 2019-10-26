@@ -14,11 +14,13 @@ import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.cmstown.model.service.StudyBoardCategoryService;
-import com.cmstown.model.service.StudyBoardPostService;
-import com.cmstown.model.service.StudyBoardShowService;
+import com.cmstown.model.service.board.StudyBoardCategoryService;
+import com.cmstown.model.service.board.StudyBoardPostService;
+import com.cmstown.model.service.board.StudyBoardShowService;
+import com.cmstown.model.service.reply.StudyReplyShowService;
 import com.cmstown.model.vo.BoardVO;
 import com.cmstown.model.vo.CategoryVO;
+import com.cmstown.model.vo.ReplyVO;
 import com.cmstown.paging.Pagination;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -36,6 +38,8 @@ public class StudyController {
     private StudyBoardCategoryService studyBoardCategoryService;
     @Autowired
     private StudyBoardShowService studyBoardShowService;
+    @Autowired
+    private StudyReplyShowService studyReplyShowService;
 
     @RequestMapping(value = "", method = RequestMethod.GET)
     public ModelAndView study(Integer category, Integer page){
@@ -111,7 +115,9 @@ public class StudyController {
         }
 
         BoardVO boardVO = studyBoardShowService.showArticle(no);
+        List<ReplyVO> replyList = studyReplyShowService.showReplyLIst(no);
         mav.addObject("info",boardVO);
+        mav.addObject("reply",replyList);
 
         return mav;
     }
