@@ -56,6 +56,7 @@ function delete_popup(replyID) {
 
     $el.find('a.btn-layerClose').off("click").click(function () {
         isDim ? $('.delete-layer').fadeOut() : $el.fadeOut();
+        $('#pop-password').val('');
         return false;
     });
     $el.find('a.btn-layerCheck').off("click").click(function () {
@@ -95,6 +96,8 @@ function update_popup(replyID) {
 
     $el.find('a.btn-updateClose').off("click").click(function () {
         isDim ? $('.update-layer').fadeOut() : $el.fadeOut();
+        $('#pop-password2').val('');
+        $('#pop-content').val('');
         return false;
     });
     $el.find('a.btn-updateCheck').off("click").click(function () {
