@@ -23,8 +23,6 @@
         <url-pattern>/</url-pattern>
     </servlet-mapping>
 
-
-
     <filter>
         <filter-name>encodingFilter</filter-name>
         <filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
@@ -39,6 +37,16 @@
     </filter>
     <filter-mapping>
         <filter-name>encodingFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+    <!-- xss보안  -->
+    <filter>
+        <filter-name>xssEscapeServletFilter</filter-name>
+        <filter-class>com.navercorp.lucy.security.xss.servletfilter.XssEscapeServletFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>xssEscapeServletFilter</filter-name>
         <url-pattern>/*</url-pattern>
     </filter-mapping>
 </web-app>

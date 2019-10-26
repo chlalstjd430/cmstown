@@ -20,6 +20,5 @@
     </bean>
 
 
-    <!--    <import resource="mybatis-config.xml"/>-->
 
 </beans>

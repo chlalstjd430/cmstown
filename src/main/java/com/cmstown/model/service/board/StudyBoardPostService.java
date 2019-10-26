@@ -1,4 +1,4 @@
-package com.cmstown.model.service;
+package com.cmstown.model.service.board;
 
 import java.util.Map;
 

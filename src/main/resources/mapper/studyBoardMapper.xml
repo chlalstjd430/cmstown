@@ -42,6 +42,8 @@
         UPDATE board_tb SET hit = hit + 1 where id =#{value}
     </update>
 
+
+
     <!-- 카테고리 리스트    -->
     <select id="selectCategoryList" resultType="com.cmstown.model.vo.CategoryVO">
         select bct.id as id,bct.name as name, count(bt.content) as count from board_category_tb AS bct
