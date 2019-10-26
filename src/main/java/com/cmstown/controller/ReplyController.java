@@ -9,6 +9,7 @@ import com.cmstown.model.service.reply.StudyReplyPostServiceImpl;
 import com.cmstown.model.service.reply.StudyReplyShowService;
 import com.cmstown.model.vo.Email;
 import com.cmstown.security.SHA256;
+import com.nhncorp.lucy.security.xss.XssPreventer;
 import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -41,9 +42,9 @@ public class ReplyController {
         JSONObject jsonObject = new JSONObject(jsonData);
 
         Integer boardID = Integer.parseInt((String)jsonObject.get("boardID"));
-        String content = (String)jsonObject.get("content");
-        String email = (String)jsonObject.get("email");
-        String pw = (String)jsonObject.get("pw");
+        String content = XssPreventer.escape((String)jsonObject.get("content"));
+        String email = XssPreventer.escape((String)jsonObject.get("email"));
+        String pw = XssPreventer.escape((String)jsonObject.get("pw"));
 
         Map<String,Object> result = new HashMap<String, Object>();
 //        validate
@@ -103,7 +104,7 @@ public class ReplyController {
         System.out.println(jsonInfo);
 
         Integer replyID = Integer.parseInt((String)jsonObject.get("replyID"));
-        String inputPW = (String)jsonObject.get("password");
+        String inputPW = XssPreventer.escape((String)jsonObject.get("password"));
 
         System.out.println(replyID+","+inputPW);
 
@@ -132,8 +133,8 @@ public class ReplyController {
         JSONObject jsonObject = new JSONObject(jsonInfo);
 
         Integer replyID = Integer.parseInt((String)jsonObject.get("replyID"));
-        String inputPW = (String)jsonObject.get("password");
-        String newContent = (String)jsonObject.get("content");
+        String inputPW = XssPreventer.escape((String)jsonObject.get("password"));
+        String newContent = XssPreventer.escape((String)jsonObject.get("content"));
 
 
         if(authService.checkReplyAuth(replyID,inputPW)){
