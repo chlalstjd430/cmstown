@@ -132,8 +132,8 @@ public class StudyController {
     @RequestMapping(value = "/postArticle.do", method = RequestMethod.POST)
     public String insertBoard(String title, String editor, Long category) {
         Map<String,Object> articleInfo = new HashMap<String, Object>();
-        articleInfo.put("title", XssPreventer.escape(title));
-        articleInfo.put("content",XssPreventer.escape(editor));
+        articleInfo.put("title", title);
+        articleInfo.put("content",editor);
         articleInfo.put("category",category);
 
         boolean result = studyBoardPostService.postArticle(articleInfo);
