@@ -55,8 +55,8 @@
           <hr class="divide light my-4">
           <p class="text-white-50 mb-4">- 1995년 4월 30일</p>
           <p class="text-white-50 mb-4">- 숭실대학교 글로벌미디어학부</p>
-          <p class="text-white-50 mb-4">- 렉토피아 JAVA 전문가 과정 17기</p>
-          <p class="text-white-50 mb-4">- 유어슈 백엔드 개발자</p>
+          <p class="text-white-50 mb-4">- Lectopia JAVA Project process 17기</p>
+          <p class="text-white-50 mb-4">- yourssu back-end developer</p>
         </div>
       </div>
     </div>
