@@ -15,6 +15,11 @@
   <link href="/resources/vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
   <!-- Theme CSS - Includes Bootstrap -->
   <link href="/resources/startbootstrap/css/creative.min.css" rel="stylesheet">
+  <script type="text/javascript">
+    if (document.location.protocol == 'http:') {
+      document.location.href = document.location.href.replace('http:', 'https:');
+    }
+  </script>
 </head>
 <body>
 
