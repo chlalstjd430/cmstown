@@ -48,7 +48,7 @@
   <div class="container h-100">
     <div class="row h-100 align-items-center justify-content-center text-center">
       <div class="col-lg-10 align-self-end">
-        <h1 class="text-uppercase text-white font-weight-bold">www.cmstown.shop</h1>
+        <h1 class="text-uppercase text-white font-weight-bold">www.cmstown.com</h1>
         <hr class="divider my-4">
       </div>
       <div class="col-lg-8 align-self-baseline">
@@ -71,8 +71,8 @@
         <hr class="divide bg-dark my-4">
         <p class="text-dark-50 mb-4">- 1995년 4월 30일</p>
         <p class="text-dark-50 mb-4">- 숭실대학교 글로벌미디어학부</p>
-        <p class="text-dark-50 mb-4">- 렉토피아 JAVA 전문가 과정 17기</p>
-        <p class="text-dark-50 mb-4">- 유어슈 백엔드 개발자</p>
+        <p class="text-dark-50 mb-4">- 렉토피아 JAVA Project process 17기</p>
+        <p class="text-dark-50 mb-4">- 유어슈 back-end developer</p>
         <a class="btn btn-dark btn-xl js-scroll-trigger" href="/about">more+</a>
       </div>
     </div>
