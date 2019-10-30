@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
-  <title>cmsTown</title>
+  <title>[${info.categoryName}] ${info.title}</title>
+  <link rel="shortcut icon" type="image⁄x-icon" href="/resources/img/icon.png">
   <link href="/resources/css/studyInfo.css" rel="stylesheet">
   <link href="/resources/css/checkPWPopup.css" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
@@ -17,11 +18,7 @@
   <link href="/resources/vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
   <!-- Theme CSS - Includes Bootstrap -->
   <link href="/resources/startbootstrap/css/creative.min.css" rel="stylesheet">
-  <script type="text/javascript">
-    if (document.location.protocol == 'http:') {
-      document.location.href = document.location.href.replace('http:', 'https:');
-    }
-  </script>
+  <script src="/resources/js/redirect.js"></script>
   <script src="/resources/js/adminStudy.js"></script>
 
 </head>
