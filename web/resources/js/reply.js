@@ -1,8 +1,16 @@
+var submitFlag = false;
 $(function(){
-
 
     //전송버튼
     $("#send-reply").click(function(){
+        if(submitFlag == true){
+            console.log('1'+submitFlag);
+            alert("현재 댓글 등록이 이루어지고 있습니다.\n댓글 등록과 동시에 관리자에게 알림 메일을 전송하기 때문에 작업이 느려질 수 있습니다.");
+            return;
+        }
+        console.log('2'+submitFlag);
+        submitFlag = true;
+        console.log('3'+submitFlag);
         var JSONdata ={
             email : $("#email").val(),
             pw : $("#password").val(),
@@ -19,11 +27,13 @@ $(function(){
             data :JSON.stringify(JSONdata),
             success:function(data){
                 alert(data.mention);
+                submitFlag == false;
                 if(data.result){
                     location.reload();
                 }
             },
             error:function(error){
+                submitFlag == false;
                 alert("일시적인 장애로 인해 댓글 작성이 실패하였습니다. 잠시후 다시 이용해주세요.");
             }
         });
