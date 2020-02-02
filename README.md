@@ -9,7 +9,7 @@
 2019.10.21 ~ 2020.01.21 동안 https://www.cmstown.com 이라는 도메인을 통해 실제 운영되었습니다. 
 해당 사이트는 20.01.22부로 폐쇄 되었고 이전 내용들은 새로운 [깃헙 블로그](https://chlalstjd430.github.io)로 이전되었습니다.
 - 개발 참여 인원 : 개인 프로젝트
-- 기간 : 2019.10.01 ~ 2019.10.30
+- 기간 : 2019.10.15 ~ 2019.10.30
 - 개발 기술 : spring mvc, mybatis, java, mysql
 - 외부 api : naver smart editor, java mail
 - 역할 : 웹 프론트, 백 엔드 및 총괄
